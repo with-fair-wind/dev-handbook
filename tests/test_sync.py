@@ -59,6 +59,7 @@ class SyncTests(unittest.TestCase):
         for name in ("docs", "sources", "state"):
             shutil.copytree(PROJECT / name, self.root / name)
         shutil.copy2(PROJECT / "mkdocs.yml", self.root / "mkdocs.yml")
+        (self.root / "state/sources.lock.json").write_text(json.dumps({"schema_version": 1, "tools": {}}), encoding="utf-8")
         self.config = load_config(self.root, "oh-my-posh")
         self.api = FakeAPI()
         self.snapshot = collect(self.config, None, self.api)
@@ -209,6 +210,17 @@ class SyncTests(unittest.TestCase):
         update(self.root, "oh-my-posh", fixture=fixture, apply=True)
         self.assertFalse(update(self.root, "oh-my-posh", fixture=fixture)["changed"])
         self.assertEqual(check_repository(self.root), 13)
+
+    def test_pipeline_with_existing_accepted_baseline(self):
+        accepted = compact(self.snapshot)
+        accepted["documents"]["stable:windows"]["hash"] = "different"
+        (self.root / "state/sources.lock.json").write_text(
+            json.dumps({"schema_version": 1, "tools": {"oh-my-posh": accepted}}), encoding="utf-8")
+        fixture = self.root / "fixture.json"
+        fixture.write_text(json.dumps(self.snapshot), encoding="utf-8")
+        result = update(self.root, "oh-my-posh", fixture=fixture)
+        self.assertTrue(result["changed"])
+        self.assertIn("未包含旧文本", Path(result["report"]).read_text(encoding="utf-8"))
 
     def test_incomplete_snapshot_rejected(self):
         del self.snapshot["documents"]["stable:windows"]
