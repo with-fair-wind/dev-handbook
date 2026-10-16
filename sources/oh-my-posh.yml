@@ -1,0 +1,34 @@
+schema_version: 1
+id: oh-my-posh
+name: Oh My Posh
+repository: JanDeDobbeleer/oh-my-posh
+preview_ref: main
+release_summary: docs/tools/oh-my-posh/index.md
+history: docs/tools/oh-my-posh/update-history.md
+documents:
+  - id: windows
+    path: website/docs/installation/windows.mdx
+    official_url: https://ohmyposh.dev/docs/installation/windows
+    targets:
+      - docs/tools/oh-my-posh/installation.md
+  - id: prompt
+    path: website/docs/installation/prompt.mdx
+    official_url: https://ohmyposh.dev/docs/installation/prompt
+    targets:
+      - docs/tools/oh-my-posh/powershell.md
+      - docs/tools/oh-my-posh/troubleshooting.md
+  - id: fonts
+    path: website/docs/installation/fonts.mdx
+    official_url: https://ohmyposh.dev/docs/installation/fonts
+    targets:
+      - docs/tools/oh-my-posh/fonts-and-themes.md
+  - id: customize
+    path: website/docs/installation/customize.mdx
+    official_url: https://ohmyposh.dev/docs/installation/customize
+    targets:
+      - docs/tools/oh-my-posh/fonts-and-themes.md
+  - id: upgrade
+    path: website/docs/installation/upgrade.mdx
+    official_url: https://ohmyposh.dev/docs/installation/upgrade
+    targets:
+      - docs/tools/oh-my-posh/installation.md

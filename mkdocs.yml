@@ -1,0 +1,35 @@
+site_name: 开发工具手册
+site_description: 有来源、有审核记录的中文开发工具知识库
+site_url: https://with-fair-wind.github.io/dev-handbook/
+repo_url: https://github.com/with-fair-wind/dev-handbook
+repo_name: with-fair-wind/dev-handbook
+edit_uri: edit/main/docs/
+theme:
+  name: mkdocs
+  locale: zh_CN
+nav:
+  - 首页: index.md
+  - Oh My Posh:
+      - 概览: tools/oh-my-posh/index.md
+      - 安装与更新: tools/oh-my-posh/installation.md
+      - PowerShell 集成: tools/oh-my-posh/powershell.md
+      - 字体与主题: tools/oh-my-posh/fonts-and-themes.md
+      - 常见问题: tools/oh-my-posh/troubleshooting.md
+      - 更新记录: tools/oh-my-posh/update-history.md
+  - 环境:
+      - Windows Terminal: environments/windows-terminal.md
+  - 维护:
+      - 更新策略: maintenance/update-policy.md
+      - 来源规则: maintenance/source-policy.md
+      - 新工具接入: maintenance/add-tool.md
+      - 操作与回滚: maintenance/operations.md
+      - 实施方案: maintenance/project-plan.md
+plugins:
+  - search:
+      lang: zh
+validation:
+  nav:
+    not_found: warn
+  links:
+    not_found: warn
+    unrecognized_links: warn
