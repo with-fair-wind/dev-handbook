@@ -58,6 +58,8 @@ def update(root, tool, fixture=None, apply=False, publish=False, repository=None
     }
     key = hashlib.sha256(json.dumps({
         "candidate": delta["fingerprint"], "state": state, "config": config, "docs": local,
+        "generator": {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
+                      for p in sorted(Path(__file__).parent.glob("*.py"))},
     }, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     if publisher:
         status = publisher.inspect(key)

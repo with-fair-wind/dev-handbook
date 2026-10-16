@@ -72,7 +72,11 @@ def report(config: dict, baseline: dict | None, candidate: dict, delta: dict) ->
         ]
         old = change["before"]
         if old:
-            before = old.get("content", item.get("previous_content", ""))
+            before = old.get("content") or item.get("previous_content")
+            if before is None:
+                lines += ["离线候选未包含旧文本；请按已接受提交链接核对，不生成可能误导的文本差异。", ""]
+                lines += [f"[已接受来源]({old['url']})", ""]
+                continue
             patch = list(difflib.unified_diff(
                 before.splitlines(), item["content"].splitlines(), fromfile="accepted",
                 tofile="candidate", lineterm=""
