@@ -24,7 +24,7 @@ Oh My Posh 是终端提示符引擎，用于呈现路径、Git 状态和其他�
 
 <!-- AUTO:BEGIN release-summary -->
 - 最近检测到的稳定版：[v31.8.0](https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v31.8.0)
-- 官方来源检查时间：2026-10-16T09:36:16.858556+00:00
+- 官方来源检查时间：2026-10-16T09:38:33.224861+00:00
 - 状态：自动采集；内容审核与命令实测请分别查看本文元数据。
 - 开发分支变化仅作为待核查线索，不代表稳定版已经支持。
 <!-- AUTO:END release-summary -->
