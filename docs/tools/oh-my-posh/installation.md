@@ -1,6 +1,6 @@
 ---
 title: "OMP 安装与更新"
-sources_checked_at: null
+sources_checked_at: 2026-10-16
 content_reviewed_at: null
 tested_versions: []
 tested_environment: null
