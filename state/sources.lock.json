@@ -1,4 +1,141 @@
 {
   "schema_version": 1,
-  "tools": {}
+  "tools": {
+    "oh-my-posh": {
+      "schema_version": 1,
+      "tool": "oh-my-posh",
+      "config_hash": "1f2126db8cf1ea75e8b9b1205558a389bada8eac79af924ab347fe73f2557f11",
+      "collected_at": "2026-10-21T06:07:29.375276+00:00",
+      "latest": {
+        "id": 418205428,
+        "tag": "v31.9.1",
+        "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v31.9.1",
+        "published_at": "2026-10-20T09:11:00Z",
+        "body": "### Bug Fixes\n\n* **android:** avoid termux from crashing on memory checks ([136a133](https://github.com/JanDeDobbeleer/oh-my-posh/commit/136a133b2cfbd4f7d6ddf5a0f47244b907becda0))"
+      },
+      "releases": [
+        {
+          "id": 418205428,
+          "tag": "v31.9.1",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/releases/tag/v31.9.1",
+          "published_at": "2026-10-20T09:11:00Z",
+          "body": "### Bug Fixes\n\n* **android:** avoid termux from crashing on memory checks ([136a133](https://github.com/JanDeDobbeleer/oh-my-posh/commit/136a133b2cfbd4f7d6ddf5a0f47244b907becda0))"
+        }
+      ],
+      "documents": {
+        "stable:windows": {
+          "hash": "41f7738f178623486ac880505efaab59c946586d170980ddbd2b0cb0b3fa3176",
+          "channel": "stable",
+          "path": "website/docs/installation/windows.mdx",
+          "commit": "e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182/website/docs/installation/windows.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/windows",
+          "targets": [
+            "docs/tools/oh-my-posh/installation.md"
+          ]
+        },
+        "stable:prompt": {
+          "hash": "7f4e12401c91ddeddcc1d40e406e9c92412b1c00083d6f4c5989a09e4867e2b3",
+          "channel": "stable",
+          "path": "website/docs/installation/prompt.mdx",
+          "commit": "e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182/website/docs/installation/prompt.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/prompt",
+          "targets": [
+            "docs/tools/oh-my-posh/powershell.md",
+            "docs/tools/oh-my-posh/troubleshooting.md"
+          ]
+        },
+        "stable:fonts": {
+          "hash": "145d5a0353dde9d0bd3fdc160cdfba999c32a8fc2494d2775ad90c958f5b6f84",
+          "channel": "stable",
+          "path": "website/docs/installation/fonts.mdx",
+          "commit": "e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182/website/docs/installation/fonts.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/fonts",
+          "targets": [
+            "docs/tools/oh-my-posh/fonts-and-themes.md"
+          ]
+        },
+        "stable:customize": {
+          "hash": "0f2b2916d2d58d1d975b87fb8b86e8a5e02c56e7225767a160be6bd992165318",
+          "channel": "stable",
+          "path": "website/docs/installation/customize.mdx",
+          "commit": "e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182/website/docs/installation/customize.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/customize",
+          "targets": [
+            "docs/tools/oh-my-posh/fonts-and-themes.md"
+          ]
+        },
+        "stable:upgrade": {
+          "hash": "c26ccbd90957ffbfc9129fb0cff1b388025623e28c6a9925dd3383774a721ff7",
+          "channel": "stable",
+          "path": "website/docs/installation/upgrade.mdx",
+          "commit": "e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/e6c9eb7796d1c903c7944c4e87a4ea2c3f6b4182/website/docs/installation/upgrade.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/upgrade",
+          "targets": [
+            "docs/tools/oh-my-posh/installation.md"
+          ]
+        },
+        "preview:windows": {
+          "hash": "41f7738f178623486ac880505efaab59c946586d170980ddbd2b0cb0b3fa3176",
+          "channel": "preview",
+          "path": "website/docs/installation/windows.mdx",
+          "commit": "0b9da69da2f294dbda90574f3bc25a26fbd854d8",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/0b9da69da2f294dbda90574f3bc25a26fbd854d8/website/docs/installation/windows.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/windows",
+          "targets": [
+            "docs/tools/oh-my-posh/installation.md"
+          ]
+        },
+        "preview:prompt": {
+          "hash": "7f4e12401c91ddeddcc1d40e406e9c92412b1c00083d6f4c5989a09e4867e2b3",
+          "channel": "preview",
+          "path": "website/docs/installation/prompt.mdx",
+          "commit": "0b9da69da2f294dbda90574f3bc25a26fbd854d8",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/0b9da69da2f294dbda90574f3bc25a26fbd854d8/website/docs/installation/prompt.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/prompt",
+          "targets": [
+            "docs/tools/oh-my-posh/powershell.md",
+            "docs/tools/oh-my-posh/troubleshooting.md"
+          ]
+        },
+        "preview:fonts": {
+          "hash": "145d5a0353dde9d0bd3fdc160cdfba999c32a8fc2494d2775ad90c958f5b6f84",
+          "channel": "preview",
+          "path": "website/docs/installation/fonts.mdx",
+          "commit": "0b9da69da2f294dbda90574f3bc25a26fbd854d8",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/0b9da69da2f294dbda90574f3bc25a26fbd854d8/website/docs/installation/fonts.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/fonts",
+          "targets": [
+            "docs/tools/oh-my-posh/fonts-and-themes.md"
+          ]
+        },
+        "preview:customize": {
+          "hash": "0f2b2916d2d58d1d975b87fb8b86e8a5e02c56e7225767a160be6bd992165318",
+          "channel": "preview",
+          "path": "website/docs/installation/customize.mdx",
+          "commit": "0b9da69da2f294dbda90574f3bc25a26fbd854d8",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/0b9da69da2f294dbda90574f3bc25a26fbd854d8/website/docs/installation/customize.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/customize",
+          "targets": [
+            "docs/tools/oh-my-posh/fonts-and-themes.md"
+          ]
+        },
+        "preview:upgrade": {
+          "hash": "c26ccbd90957ffbfc9129fb0cff1b388025623e28c6a9925dd3383774a721ff7",
+          "channel": "preview",
+          "path": "website/docs/installation/upgrade.mdx",
+          "commit": "0b9da69da2f294dbda90574f3bc25a26fbd854d8",
+          "url": "https://github.com/JanDeDobbeleer/oh-my-posh/blob/0b9da69da2f294dbda90574f3bc25a26fbd854d8/website/docs/installation/upgrade.mdx",
+          "official_url": "https://ohmyposh.dev/docs/installation/upgrade",
+          "targets": [
+            "docs/tools/oh-my-posh/installation.md"
+          ]
+        }
+      }
+    }
+  }
 }
