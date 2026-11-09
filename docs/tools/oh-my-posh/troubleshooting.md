@@ -1,6 +1,6 @@
 ---
 title: "OMP 常见问题"
-sources_checked_at: 2026-10-21
+sources_checked_at: 2026-11-09
 content_reviewed_at: null
 tested_versions: []
 tested_environment: null
